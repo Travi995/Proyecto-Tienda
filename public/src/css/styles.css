@@ -1,0 +1,45 @@
+#cuerpo{
+
+    background-color: rgb(128, 140, 140);
+    background: url("../../assets/media/imgs/fondos/inicio.jpg") no-repeat center/cover;
+    background-size: 100% 100%   ;
+}
+#Bienvenido{
+    color: rgb(109, 183, 109);
+    font-size: 80px;
+    text-shadow: 2px 2px 3px rgb(175, 144, 144), 3px 3px 4px rgb(190, 161, 161) ;
+    transition: all 500ms ;
+}
+#Bienvenido:hover{
+    color:black;
+    cursor: none;
+    box-shadow: 3px 3px 3px 3px white, 3px 3px 3px 3px rgb(251, 250, 250);
+    text-shadow: 2px 2px 3px rgb(131, 109, 109), 3px 3px 4px rgb(118, 96, 96);
+}
+
+#enlace{
+    text-decoration: none;
+    color: green;
+}
+#enlace:hover{
+    color: aliceblue;
+}
+@media (max-width:1200px){
+    #Bienvenido{
+        font-size: 60px;
+    } 
+}
+@media (max-width:992px){
+    #Bienvenido{
+        font-size: 40px;
+    }   
+}
+@media (max-width:530px){
+    #Bienvenido{
+        font-size: 30px;
+    }
+    #icono{
+        font-size: 10px;
+    }
+    
+}

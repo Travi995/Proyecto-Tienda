@@ -1,0 +1,70 @@
+
+#cuerpo{
+ background-color: rgb(128, 140, 140);
+    background: url("../../assets/media/imgs/fondos/inicio.jpg") no-repeat center/cover;
+    background-size: 100% 100%   ;
+}
+
+#enunciado{
+    text-transform: capitalize;
+    font-style: italic;
+    color: rgb(60, 93, 71);
+
+}
+#enunciado:hover{
+    color: aliceblue;
+    text-shadow: 5px 5px 5px black;
+    cursor:none;
+}
+#descripcion{
+    overflow: hidden;
+
+}
+
+
+#texto{
+    text-indent: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.687);
+    
+    animation: inicial 7s linear;
+}
+#texto b{
+    text-decoration:line-through;
+}
+@keyframes inicial{
+    from{
+        transform: translateX(-1200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+#boton{
+    box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79), 4px 4px 4px 4px rgb(65, 65, 65);
+    animation: boton 3s infinite linear;
+}
+#boton a{
+    text-decoration: none;
+    color: rgb(97, 189, 97);
+}
+#boton a:hover{
+    color: white;
+    text-transform: uppercase;
+}
+@keyframes boton{
+    0%{
+        background: linear-gradient(0deg, #cbe8b4 0%, #c4beea 100%);
+        box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79);
+    }
+    50%{
+        background: linear-gradient(0deg, #df97ba 0%, #ace9b1 100%);
+        box-shadow:2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79);
+    }
+    100%{
+        background: linear-gradient(0deg, #e9b4ce 0%, #a7ebad 100%);
+        box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79), 4px 4px 4px 4px rgb(65, 65, 65);
+    }
+}
