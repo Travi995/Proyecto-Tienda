@@ -68,3 +68,30 @@
         box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79), 4px 4px 4px 4px rgb(65, 65, 65);
     }
 }
+@media (max-height:750px){
+    #descripcion{
+        margin-top: 0px !important;
+    }
+
+}
+@media (max-width:1200px) {
+    
+    #texto{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width:991px) {
+    
+    #texto{
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width:355px) {
+    
+    #texto{
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,15 @@
+#cuerpo{
+    background-color: rgb(128, 140, 140);
+       background: url("../../assets/media/imgs/fondos/inicio.jpg") no-repeat center/cover;
+       background-size: 100% 100%   ;
+   }
+#seleccionar{
+    background: radial-gradient(circle, #f2f4f0 0%, #c5cac8 100%);
+    border-radius: 10px;
+}   
+#seleccionar option{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 15px;
+    background: rgba(198, 204, 202, 0.635);
+}
