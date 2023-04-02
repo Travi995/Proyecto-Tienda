@@ -1,0 +1,23 @@
+#cuerpo{
+    background-color: rgb(128, 140, 140);
+    background: url("../../assets/media/imgs/fondos/comprador.jpg") no-repeat center/cover;
+    background-size: 100% 100%   ;
+}
+
+.verse{
+    text-indent: 10px;
+    color: rgb(12, 11, 10);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray, 2px 2px 2px gray, 2px 2px 2px gray;
+}
+#checkbox{
+    margin-inline-start: 0px;
+}
+#envio{
+    box-shadow: 2px 2px 2px white, 3px 3px 3px white, 2px 2px 2px white;
+   /* background: radial-gradient(circle, #11f7cd 0%, #8e9d5f 100%);
+    */
+}
+#envio:hover{
+    color:white;
+}
