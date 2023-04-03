@@ -1,0 +1,5 @@
+require('dotenv').config()
+console.clear()
+const Server = require('./server/models/server')
+console.log(process.env.PORT)
+const app = new Server(process.env.PORT)

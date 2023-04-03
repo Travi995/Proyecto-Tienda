@@ -1,0 +1,39 @@
+{
+  "engines": {"node": "18.12.1"},
+  "name": "proyecto-tienda",
+  "version": "1.0.0",
+  "description": "Esta es una tienda virtual Universitaria",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js", 
+    "run": "node app.js",
+    "build": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travi995/Proyecto-Tienda.git"
+  },
+  "keywords": [
+    "Tienda",
+    "UCI"
+  ],
+  "author": "e38e4a2c0504cdfecaa72a53dea227e4f241b585c6bbb318719319b34cadb31e",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Travi995/Proyecto-Tienda/issues"
+  },
+  "homepage": "https://github.com/Travi995/Proyecto-Tienda#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.29.0",
+    "uuid": "^9.0.0"
+  }
+}
