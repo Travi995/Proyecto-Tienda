@@ -15,4 +15,10 @@ function EleccionPagina(){
         
     }   
 }
-document.getElementById("adelante").onclick = EleccionPagina;
+
+function Atras (){
+    window.location.href = "./inicio.html"
+}
+
+document.getElementById("adelante").onclick = EleccionPagina
+document.getElementById("atras").onclick    = Atras
