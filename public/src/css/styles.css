@@ -1,30 +1,46 @@
-#cuerpo{
-
+body{
     background-color: rgb(128, 140, 140);
-    background: url("../../assets/media/imgs/fondos/inicio.jpg") no-repeat center/cover;
+    background: url("../../assets/media/imgs/fondos/verde rocoso.jpg") no-repeat center/cover;
     background-size: 100% 100%   ;
 }
+
 #Bienvenido{
-    color: rgb(109, 183, 109);
+    color: rgba(10, 80, 10, 0.899);
     font-size: 80px;
-    text-shadow: 2px 2px 3px rgb(175, 144, 144), 3px 3px 4px rgb(190, 161, 161) ;
+    text-shadow: 2px 2px 3px rgb(207, 203, 203), 3px 3px 4px rgb(201, 197, 197) ;
     transition: all 500ms ;
 }
 #Bienvenido:hover{
-    color:black;
-    cursor: none;
-    box-shadow: 3px 3px 3px 3px white, 3px 3px 3px 3px rgb(251, 250, 250);
-    text-shadow: 2px 2px 3px rgb(131, 109, 109), 3px 3px 4px rgb(118, 96, 96);
+    color: rgb(185, 245, 170);
+    cursor: none;  
 }
 
 #enlace{
     text-decoration: none;
-    color: green;
+    color: rgba(98, 146, 40, 0.757);
 }
 #enlace:hover{
     color: aliceblue;
 }
+#boton{
+    box-shadow: 2px 2px 2px white, 2px 2px 2px white, 2px 2px 2px white, -2px -2px 2px white;
+}
+#boton:hover{
+    color: beige;
+    background: linear-gradient(113deg, #043605 0%, #1e6420 100%);
+    box-shadow: 2px 2px 2px white inset, 2px 2px 2px white inset, 2px 2px 2px white inset, -2px -2px 2px white inset;
+}
 @media (max-width:1200px){
+    body{
+        background-image: none;
+    }
+   #cuerpo{
+
+        background-color: rgb(128, 140, 140);
+        background: url("../../assets/media/imgs/fondos/verde rocoso.jpg") no-repeat center/cover;
+        background-size: 100% 100%   ;
+    }
+
     #Bienvenido{
         font-size: 60px;
     } 
