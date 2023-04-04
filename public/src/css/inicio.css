@@ -1,96 +1,132 @@
-
-#cuerpo{
- background-color: rgb(128, 140, 140);
-    background: url("../../assets/media/imgs/fondos/inicio.jpg") no-repeat center/cover;
-    background-size: 100% 100%   ;
+body {
+    background-color: rgb(128, 140, 140);
+    background: url("./../../assets/media/imgs/fondos/verde rocoso.jpg") no-repeat center/cover;
+    background-size: 100% 100%;
 }
 
-#enunciado{
+
+#enunciado {
     text-transform: capitalize;
     font-style: italic;
-    color: rgb(60, 93, 71);
+    color: #093e1b;
+    text-shadow: 2px 2px 2px white, 2px 2px 2px white, -2px -2px 2px white, -2px -2px 2px white;
 
 }
-#enunciado:hover{
+
+#enunciado:hover {
     color: aliceblue;
     text-shadow: 5px 5px 5px black;
-    cursor:none;
+    cursor: none;
 }
-#descripcion{
+
+#descripcion {
     overflow: hidden;
 
 }
 
 
-#texto{
+#texto {
     text-indent: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.687);
-    
+    color: rgba(66, 197, 75, 0.802);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.584);
+
     animation: inicial 7s linear;
 }
-#texto b{
-    text-decoration:line-through;
+
+#texto b {
+    text-decoration: line-through;
 }
-@keyframes inicial{
-    from{
+
+@keyframes inicial {
+    from {
         transform: translateX(-1200px);
     }
-    to{
+
+    to {
         transform: translateX(0px);
     }
 }
 
-#boton{
-    box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79), 4px 4px 4px 4px rgb(65, 65, 65);
+#boton {
+    background: linear-gradient(113deg, #043605 0%, #1e6420 100%) !important;
+    box-shadow: 2px 2px 2px white, 2px 2px 2px white, 2px 2px 2px white, -2px -2px 2px white !important;
     animation: boton 3s infinite linear;
+    border-radius: 5px;
 }
-#boton a{
+
+#boton a {
     text-decoration: none;
     color: rgb(97, 189, 97);
 }
-#boton a:hover{
+#boton:hover{
+    color: beige;
+    background: linear-gradient(113deg, #043605 0%, #1e6420 100%);
+    box-shadow: 2px 2px 2px white inset, 2px 2px 2px white inset, 2px 2px 2px white inset, -2px -2px 2px white inset;
+    
+}
+
+#boton a:hover {
     color: white;
     text-transform: uppercase;
+    
 }
-@keyframes boton{
-    0%{
+
+@keyframes boton {
+    0% {
         background: linear-gradient(0deg, #cbe8b4 0%, #c4beea 100%);
         box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79);
     }
-    50%{
+
+    50% {
         background: linear-gradient(0deg, #df97ba 0%, #ace9b1 100%);
-        box-shadow:2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79);
+        box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79);
     }
-    100%{
+
+    100% {
         background: linear-gradient(0deg, #e9b4ce 0%, #a7ebad 100%);
         box-shadow: 2px 2px 2px 2px rgb(62, 61, 61), 3px 3px 3px 3px rgb(79, 79, 79), 4px 4px 4px 4px rgb(65, 65, 65);
     }
 }
-@media (max-height:750px){
-    #descripcion{
+
+@media (max-height:750px) {
+    #descripcion {
         margin-top: 0px !important;
     }
 
 }
+
 @media (max-width:1200px) {
-    
-    #texto{
-        font-size: 15px;
-        margin-bottom: 0px;
+    body {
+        background-image: none;
     }
+
+    #cuerpo {
+        background-color: rgb(128, 140, 140);
+        background: url("./../../assets/media/imgs/fondos/verde rocoso.jpg") no-repeat center/cover;
+        background-size: 100% 100%;
+    }
+
 }
+
+#texto {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+
 @media (max-width:991px) {
-    
-    #texto{
+
+    #texto {
         font-size: 10px;
         margin-bottom: 0px;
     }
 }
+
 @media (max-width:355px) {
-    
-    #texto{
+
+    #texto {
         font-size: 8px;
         margin-bottom: 0px;
     }

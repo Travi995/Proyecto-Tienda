@@ -15,42 +15,46 @@
 
 <body class="vw-100">
     <div>
-        <div class="vw-100 vh-100 container mt-1" id="cuerpo">
-            <div class="mb-3 p-2">
-                <label for="exampleInputText1" class="form-label text-capitalize verse">Introduzca el Lugar donde
-                    vive</label>
-                <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp"
-                    placeholder="Escriba Aqui su lugar de residencia">
-
+        <div class="vw-100 vh-100 container border mt-1" id="cuerpo">
+            <div class="d-flex justify-content-center mb-3 p-2">
+                <div class="w-50">
+                    <label for="exampleInputText1" class="form-label text-capitalize verse">Introduzca el Lugar donde
+                        vive</label>
+                    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp"
+                        placeholder="Escriba Aqui su lugar de residencia">
+                </div>
             </div>
-            <div class="mb-3 ">
-                <label for="exampleInputText1" class="form-label text-capitalize verse">Introduzca la provincia en la
-                    que quiere vender su producto</label>
-                <input type="text" class="form-control" id="exampleInputText2" aria-describedby="textHelp"
-                    placeholder="este campo es obligatorio">
-
+            <div class="d-flex justify-content-center mb-3 ">
+                <div class="w-50">
+                    <label for="exampleInputText1" class="form-label text-capitalize verse">Introduzca la provincia en
+                        la
+                        que quiere vender su producto</label>
+                    <input type="text" class="form-control" id="exampleInputText2" aria-describedby="textHelp"
+                        placeholder="Campo obligatorio">
+                </div>
             </div>
-            <div class="mb-3 ">
-                <label for="exampleInputText1" class="form-label text-capitalize verse">Introduzca el municipio en el
-                    que quiere vender su producto</label>
-                <input type="text" class="form-control" id="exampleInputText3" aria-describedby="textHelp"
-                    placeholder="este campo no es obligatorio">
+            <div class="d-flex justify-content-center mb-3 ">
+                <div class="w-50">
+                    <label for="exampleInputText1" class="form-label text-capitalize verse">Introduzca el municipio en
+                        el
+                        que quiere vender su producto</label>
+                    <input type="text" class="form-control" id="exampleInputText3" aria-describedby="textHelp"
+                        placeholder="Campo no obligatorio">
+                    <div class="form-check mt-3">
+                        <input class="form-check-input mt-2" type="checkbox" value="true" id="checkbox">
+                        <label class="form-check-label verse " for="checkbox">
+                            En todo el pais
+                        </label>
+                    </div>
+                </div>
 
-            </div>
-
-
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="true" id="checkbox">
-                <label class="form-check-label verse" for="checkbox">
-                    En todo el pais
-                </label>
             </div>
             <div class=" text-center">
-            <input type="submit" text="enviar" class="btn btn-success m-3 " id="envio">
-            <button type="button" class="btn btn-outline-danger">cancelar</button>
+                <button type="button" class="btn btn-outline-danger" id="atras">cancelar</button>
+                <button type="button" text="enviar" class="btn btn-success m-3 " id="adelante">Enviar</button>
 
-            
-        </div>
+
+            </div>
 
 
         </div>
@@ -63,6 +67,7 @@
 
     <script src="../../libs/bootstrap-5.3.0/js/popper.min.js"></script>
     <script src="../../libs/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="./../js/vendedor.js"></script>
 </body>
 
 </html>
