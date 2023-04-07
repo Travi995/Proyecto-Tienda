@@ -1,0 +1,150 @@
+:root{
+    --menu-size:1110px;
+}
+
+
+#cuerpo {
+
+    background-color: rgb(128, 140, 140);
+    background: url("./../../assets/media/imgs/fondos/background-44-1920x1024.jpg") no-repeat center/cover;
+    background-size: 100% 100%;
+
+}
+
+
+#barradesplgable{
+    background-color: transparent;
+    margin-top: 5px !important;
+    box-shadow: 2px 2px 2px rgb(178, 175, 175);
+    
+
+}
+#barradesplgable img{
+    width: 32px;
+    height: 32px;
+}
+#barradesplgable:hover{
+    box-shadow: none;
+}
+#icon_user button img{
+    width: 32px ;
+    height: 32px;
+    box-shadow: 3px 3px 3px rgb(178, 175, 175);
+}
+#icon_user button:hover img{
+    box-shadow: none;
+}
+/*tarjetas de productos*/
+#tarjeta{
+    width: 400px;
+}
+
+#imgproduct{
+    width: 100px;
+    height: 100px;
+    
+}
+.datoproduct{
+    color: white;
+    text-transform: capitalize;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-style:oblique;
+}
+#direccion{
+    
+    width:100px;
+    overflow: hidden;
+    color: aliceblue;
+    transition: all 3s ;
+}
+#favorito img{
+    width: 35px;
+    height:34px;
+}
+#comprar img{
+    width: 35px;
+    height: 34px;
+}
+
+
+/*pie de pagina*/
+
+#menu{
+    position: fixed;
+    left:   2;
+    bottom: 0;
+    
+}
+#menu footer{
+    width: var(--menu-size);
+    margin-bottom: 2px;
+    
+}
+#lista{
+   background-image: -webkit-gradient();
+}
+#inicio{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.imgsize{
+    width: 35px;
+    height: 35px;
+}
+.imgsize:hover{
+    border: 1px solid green;
+
+}
+
+#comida{
+    width: 17%;
+    padding-left:7%;
+    padding-right: 7%;
+}
+#comida a{
+    padding: 0px;
+    margin-top: 6px;
+}
+#busqueda{
+    width: 35%;  
+}
+#lupa{
+    width:25px;
+    height:25px;
+}
+#elementos{
+    width:20%;
+    
+}
+#favorito{
+    width:20%;
+    
+}
+#elementos img , #favorito img{
+    cursor: pointer;
+}
+
+
+
+
+
+.subtitulo{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.727);
+}
+@media (max-width:1200px) {
+    body {
+        background-image: none;
+    }
+
+    #cuerpo {
+        background-color: rgb(128, 140, 140);
+        background: url("./../../assets/media/imgs/fondos/background-44-1920x1024.jpg") no-repeat center/cover;
+        background-size: 100% 100%;
+    }
+
+}
