@@ -37,6 +37,7 @@
 /*tarjetas de productos*/
 #tarjeta{
     width: 400px;
+    height:100px;
 }
 
 #imgproduct{
@@ -67,87 +68,38 @@
     width: 35px;
     height: 34px;
 }
-
-
-/*pie de pagina*/
-
-
-#menu{
+ /*pie de pagina*/
+ #pie{
+    width: 82%;
     position: fixed;
-    left:   2;
+    left: 2;
     bottom: 0;
-    
-}
-#menu footer{
-    width: var(--menu-size);
-    margin-bottom: 2px;   
-}
-#navbarSupportedContent{
-    background-color:rgba(4, 17, 8, 0.816);
-    box-shadow: 2px 2px 2px rgb(172, 171, 171), 2px 2px 2px rgb(216, 214, 214), 2px 2px 2px rgb(212, 210, 210), 2px -4px 3px rgb(218, 215, 215);
-    
-    transition: all 2s;
-    
-
-} 
-#navbarSupportedContent:hover{
-    box-shadow: none;
-    
-}
- #navbarSupportedContent:hover li a img{
-    box-shadow: 2px 2px 2px white, 2px 2px 2px white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: -2px -2px 3px white , -2px -2px 2px white;
+    transition: all 2s ;
  }
- #navbarSupportedContent li a img:hover{
-    box-shadow: none;
+ #pie:hover {
+    box-shadow:none ;
+    background: rgba(11, 46, 22, 0.724);
+    
  }
 
-#inicio{
-    margin-left: 5%;
-    margin-right: 5%;
-    
-}
-.imgsize{
+.iconmenu{
     width: 35px;
     height: 35px;
-}
-.imgsize:hover{
-    /* box-shadow: 2px 2px 2px white inset, 2px 2px 2px white inset, -2px -2px 2px white inset, -2px -2px 2px white inset; */
-    box-shadow:  2px 2px 2px white ;
-}
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
 
-
-#comida{
-    width: 17%;
-    padding-left:7%;
-    padding-right: 7%;
 }
-#comida a{
-    padding: 0px;
-    margin-top: 6px;
+#pie:hover .iconmenu{
+    box-shadow: 2px 2px 2px white, 2px 2px 2px white;   
 }
-#busqueda{
-    width: 35%;  
+#pie .iconmenu:hover{
+    box-shadow: none;
+    border: 1px dashed white;
 }
-#lupa{
-    width:30px;
-    height:30px;
-}
-#lupa:hover{
-    box-shadow:  2px 2px 2px white ;
-}
-#elementos{
-    width:20%;
-    
-}
-#favorito{
-    width:20%;
-    
-}
-#elementos img , #favorito img{
-    cursor: pointer;
-}
-
-
 
 
 
@@ -169,10 +121,42 @@
 
 }
 @media (max-width:991px){
-    #menu footer{
-        width: 700px;
+    #pie{
+        width:70%;
     }
-    .navbar-collapse {
-        display: flex !important;
-      }
+}
+@media (max-width: 575px){
+    #pie{
+        width: 90%;
+        margin-left: 5px;
+    }
+}
+@media (max-width:375px){
+    /* respossive correcto hast las 298 px de width */
+    #tarjeta{
+        height: 87px;
+    }
+    #nombre{
+        margin-bottom: 0px !important;
+    }
+    .descrip{
+        font-size: 12px;
+    }
+    #imgproduct{
+        width: 80px;
+        height: 80px;
+        padding-top: 7px !important;  
+    }
+    #direccion{
+        width:60px;
+    }
+
+    #favorito img{
+        width: 30px;
+        height:30px;
+    }
+    #comprar img{
+        width: 30px;
+        height: 30px;
+    }
 }

@@ -62,20 +62,20 @@
                 <img src="./assets/media/imgs/fondos/vendedor.jpg" id="imgproduct" class=" img-fluid pt-1 ms-1 pb-1"
                     alt="...">
                 <div class=" ms-2 border-end h-100 w-75  ">
-                    <h6 class="text-capitalize text-light text-center">Producto:</h6>
+                    <h6 class="text-capitalize text-light text-center" id="nombre">Producto:</h6>
                     <div class="ms-2 ">
                         <div>
-                            <span class=" text-capitalize text-light">domicilio:</span>
-                            <span class=" datoproduct">Si</span>
+                            <span class=" text-capitalize text-light descrip descrip">domicilio:</span>
+                            <span class=" datoproduct descrip descrip">Si</span>
                         </div>
                         <div class="d-flex overflow-hidden">
-                            <span class=" text-capitalize text-light overflow-hidden">direccion:</span>
-                            <span class="ms-1 " id="direccion">A</span>
+                            <span class=" text-capitalize text-light overflow-hidden descrip">direccion:</span>
+                            <span class="ms-1  descrip" id="direccion">A</span>
                         </div>
                         <div>
-                            <span class=" text-capitalize text-light">precio:</span>
-                            <span class=" datoproduct ms-4">0</span>
-                            <span class=" datoproduct text-uppercase">mlc</span>
+                            <span class=" text-capitalize text-light descrip">precio:</span>
+                            <span class=" datoproduct ms-4 descrip">0</span>
+                            <span class=" datoproduct text-uppercase descrip">mlc</span>
                         </div>
                     </div>
                 </div>
@@ -87,74 +87,40 @@
             </div>
         </div>
 
-        <!-- Pie de pagina -->
-        <div class="d-flex " id="menu">  
-            <footer >
-                <nav class="navbar navbar-expand-lg navbar-light p-0 bg-light">
-                    <div class="container-fluid ps-0 pe-0   w-100">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto w-100 mb-2 mb-lg-0" id="lista">
-                                <li class="nav-item pt-1" id="inicio">
-                                    <a class="navbar-brand text-capitalize   text-center  " href="./Inicio.html">
-                                        <img title="inicio"
-                                            src="./assets/media/icons/listado de iconos/home 2(rosa).png"
-                                            class="imgsize" alt="">
-                                    </a>
-                                    
-                                </li>
-                                <li class="nav-item " id="comida">
-                                    <a class="nav-link active text-center" aria-current="page" href="#">
-                                        <img title="Comida"
-                                            src="./assets/media/icons/listado de iconos/icons8-hamburguesa-64.png"
-                                            class="imgsize ms-1 " alt="">
-                                    </a>
-                                    
+       <!-- pie de pagina -->
+       <footer id="pie" class=" border d-flex justify-content-center">
+            <div id="inicio" class="flex-fill text-center">
+                <a href="#" class="text-decoration-none">
+                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/home 2(rosa).png" alt="">
+                </a>
+            </div>
+            <div id="comida" class="flex-fill text-center">
+                <a href="#" class="text-decoration-none">
+                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-hamburguesa-64.png" alt="">
+                </a>
+            </div>
+            <div id="inicio" class="flex-fill text-center">
+                <a href="#" class="text-decoration-none">
+                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-no-tarifa-ocultos-64.png" alt="">
+                </a>
+            </div>
+            <div id="inicio" class="flex-fill text-center">
+                <a href="#" class="text-decoration-none">
+                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-marketplace-hub-64.png" alt="">
+                </a>
+            </div>
+            <div id="inicio" class="flex-fill text-center">
+                <a href="#" class="text-decoration-none">
+                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-carpeta-de-favoritos-64.png" alt="">
+                </a>
+            </div>
 
-                                </li>
-                                <li class="nav-item d-flex justify-content-center " id="busqueda">
-                                    <div>
-                                        <form class="d-flex ">
 
-                                            <button class="btn " type="submit">
-                                                <img title="Buscar" class=""
-                                                    src="./assets/media/icons/listado de iconos/icons8-no-tarifa-ocultos-64.png"
-                                                    id="lupa" alt="">
-                                            </button>
 
-                                        </form>
-                                        
-                                    </div>
-                                </li>
 
-                                </li>
-                                <li class="nav-item  text-center" id="elementos">
-                                    <a class="nav-link active">
-                                        <img title="Otros Elementos"
-                                            src="./assets/media/icons/listado de iconos/icons8-marketplace-hub-64.png"
-                                            class="imgsize" alt="">
-                                    </a>
-                                    
-                                </li>
-                                <li class="nav-item  text-center " id="favorito">
-                                    <a class="nav-link active">
-                                        <img title="Favoritos"
-                                            src="./assets/media/icons/listado de iconos/icons8-carpeta-de-favoritos-64.png"
-                                            class="imgsize " alt="">
-                                    </a>
-                                    
-                                </li>
-                            </ul>
 
-                        </div>
-                    </div>
-                </nav>
-            </footer>
-        </div>
+
+       </footer>
 
 
 
