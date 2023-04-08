@@ -71,6 +71,7 @@
 
 /*pie de pagina*/
 
+
 #menu{
     position: fixed;
     left:   2;
@@ -79,12 +80,27 @@
 }
 #menu footer{
     width: var(--menu-size);
-    margin-bottom: 2px;
+    margin-bottom: 2px;   
+}
+#navbarSupportedContent{
+    background-color:rgba(4, 17, 8, 0.816);
+    box-shadow: 2px 2px 2px rgb(172, 171, 171), 2px 2px 2px rgb(216, 214, 214), 2px 2px 2px rgb(212, 210, 210), 2px -4px 3px rgb(218, 215, 215);
+    
+    transition: all 2s;
+    
+
+} 
+#navbarSupportedContent:hover{
+    box-shadow: none;
     
 }
-#lista{
-   background-image: -webkit-gradient();
-}
+ #navbarSupportedContent:hover li a img{
+    box-shadow: 2px 2px 2px white, 2px 2px 2px white;
+ }
+ #navbarSupportedContent li a img:hover{
+    box-shadow: none;
+ }
+
 #inicio{
     margin-left: 5%;
     margin-right: 5%;
@@ -95,9 +111,10 @@
     height: 35px;
 }
 .imgsize:hover{
-    border: 1px solid green;
-
+    /* box-shadow: 2px 2px 2px white inset, 2px 2px 2px white inset, -2px -2px 2px white inset, -2px -2px 2px white inset; */
+    box-shadow:  2px 2px 2px white ;
 }
+
 
 #comida{
     width: 17%;
@@ -112,8 +129,11 @@
     width: 35%;  
 }
 #lupa{
-    width:25px;
-    height:25px;
+    width:30px;
+    height:30px;
+}
+#lupa:hover{
+    box-shadow:  2px 2px 2px white ;
 }
 #elementos{
     width:20%;
@@ -131,14 +151,14 @@
 
 
 
-.subtitulo{
-    font-size: 14px;
-    text-transform: capitalize;
-    color: rgba(0, 0, 0, 0.727);
-}
+
 @media (max-width:1200px) {
+    
     body {
         background-image: none;
+    }
+    #menu footer{
+        width: 930px;
     }
 
     #cuerpo {
@@ -147,4 +167,12 @@
         background-size: 100% 100%;
     }
 
+}
+@media (max-width:991px){
+    #menu footer{
+        width: 700px;
+    }
+    .navbar-collapse {
+        display: flex !important;
+      }
 }
