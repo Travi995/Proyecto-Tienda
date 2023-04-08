@@ -14,40 +14,40 @@
 </head>
 
 <body class="vw-100">
-    <div class="vw-100 vh-100 container" id="cuerpo">
-        <div class="vw-75 d-flex flex-row">
+    <div class="vw-100 vh-100  p-0 m-0" id="cuerpo">
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+            id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    descripcion aki
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="vw-100 d-flex flex-row dtmNavbar" >
             <!-- menu desplegable -->
             <a class="btn  h-75 p-0" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                 aria-controls="offcanvasExample" id="barradesplgable">
                 <img src="./assets/media/icons/listado de iconos/icons8-feed-de-actividad-2-64 (verde oscuro).png"
                     alt="">
             </a>
-
-            
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
-                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
-                        descripcion aki
-                    </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
             <!-- icono de usuario -->
             <div class="ms-auto " id="icon_user">
@@ -80,15 +80,17 @@
                     </div>
                 </div>
                 <div class="w-25">
-                    <button type="button" id="favorito" class="btn border-bottom w-100" title="agregar a favoritos"><img src="./assets/media/icons/listado de iconos/icons8-me-gusta-100 (1).png" alt=""></button>
-                    <button type="button" id="comprar" class="btn w-100 border-top-1" title="Comprar"><img src="./assets/media/icons/listado de iconos/icons8-whatsapp-64 (1).png" alt=""></button>
-                    
+                    <button type="button" id="favorito" class="btn border-bottom w-100" title="agregar a favoritos"><img
+                            src="./assets/media/icons/listado de iconos/icons8-me-gusta-100 (1).png" alt=""></button>
+                    <button type="button" id="comprar" class="btn w-100 border-top-1" title="Comprar"><img
+                            src="./assets/media/icons/listado de iconos/icons8-whatsapp-64 (1).png" alt=""></button>
+
                 </div>
             </div>
         </div>
 
-       <!-- pie de pagina -->
-       <footer id="pie" class=" border d-flex justify-content-center">
+        <!-- pie de pagina -->
+        <footer id="pie" class=" d-flex justify-content-center w-100">
             <div id="inicio" class="flex-fill text-center">
                 <a href="#" class="text-decoration-none">
                     <img class="iconmenu" src="./assets/media/icons/listado de iconos/home 2(rosa).png" alt="">
@@ -101,26 +103,23 @@
             </div>
             <div id="inicio" class="flex-fill text-center">
                 <a href="#" class="text-decoration-none">
-                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-no-tarifa-ocultos-64.png" alt="">
+                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-no-tarifa-ocultos-64.png"
+                        alt="">
                 </a>
             </div>
             <div id="inicio" class="flex-fill text-center">
                 <a href="#" class="text-decoration-none">
-                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-marketplace-hub-64.png" alt="">
+                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-marketplace-hub-64.png"
+                        alt="">
                 </a>
             </div>
             <div id="inicio" class="flex-fill text-center">
                 <a href="#" class="text-decoration-none">
-                    <img class="iconmenu" src="./assets/media/icons/listado de iconos/icons8-carpeta-de-favoritos-64.png" alt="">
+                    <img class="iconmenu"
+                        src="./assets/media/icons/listado de iconos/icons8-carpeta-de-favoritos-64.png" alt="">
                 </a>
             </div>
-
-
-
-
-
-
-       </footer>
+        </footer>
 
 
 
