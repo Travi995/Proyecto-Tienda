@@ -44,6 +44,36 @@
     box-shadow: none;
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.896));
 }
+/* menu desplegable del usuario */
+#user_emergente{
+    display: none;
+}
+#user_emergente{
+    width:auto;
+    height: auto;
+    flex-direction: column;
+    position:absolute;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #5d6161;
+}
+#user_emergente span{
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px; 
+    
+    
+}
+#user_emergente span:hover{
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+}
+/* inicio */
+.inicializacion{
+    display: none;
+}
 
 /*tarjetas de productos*/
 .tarjeta {
@@ -107,6 +137,7 @@
 #pie .iconmenu:hover {
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.896));    
 }
+
 
 
 
