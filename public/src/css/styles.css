@@ -46,7 +46,7 @@
 }
 
 /*tarjetas de productos*/
-#tarjeta {
+.tarjeta {
     width: 400px;
     height: 100px;
     background-color: rgba(79, 81, 81, 0.71);

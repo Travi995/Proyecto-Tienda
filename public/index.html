@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="./libs/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./libs/sweet alert2/css/sweetalert2.min.css">
 
 </head>
 
@@ -41,7 +42,7 @@
             </div>
         </div>
 
-        <div class="vw-100 d-flex flex-row dtmNavbar" >
+        <div class="vw-100 d-flex flex-row dtmNavbar">
             <!-- menu desplegable -->
             <a class="btn  h-75 p-0" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                 aria-controls="offcanvasExample" id="barradesplgable">
@@ -55,40 +56,43 @@
                         src="./assets/media/icons/listado de iconos/icons8-vista-desde-la-calle-64.png" alt=""></button>
             </div>
         </div>
-
-        <!-- card de producto -->
-        <div class=" d-flex justify-content-center  ">
-            <div class="border border-1 rounded d-flex    " id="tarjeta">
-                <img src="./assets/media/imgs/fondos/vendedor.jpg" id="imgproduct" class=" img-fluid pt-1 ms-1 pb-1"
-                    alt="...">
-                <div class=" ms-2 border-end h-100 w-75  ">
-                    <h6 class="text-capitalize text-light text-center" id="nombre">Producto:</h6>
-                    <div class="ms-2 ">
-                        <div>
-                            <span class=" text-capitalize text-light descrip descrip">domicilio:</span>
-                            <span class=" datoproduct descrip descrip">Si</span>
-                        </div>
-                        <div class="d-flex overflow-hidden">
-                            <span class=" text-capitalize text-light overflow-hidden descrip">direccion:</span>
-                            <span class="ms-1  descrip" id="direccion">A</span>
-                        </div>
-                        <div>
-                            <span class=" text-capitalize text-light descrip">precio:</span>
-                            <span class=" datoproduct ms-4 descrip">0</span>
-                            <span class=" datoproduct text-uppercase descrip">mlc</span>
+        <!-- cuerpo para poner los cards del producto -->
+        <div id="productos">
+            <!-- plantilla de card de producto -->
+            <div class=" d-flex justify-content-center  ">
+                <div class="border border-1 rounded d-flex   tarjeta " >
+                    <img src="./assets/media/imgs/fondos/vendedor.jpg" id="imgproduct" class=" img-fluid pt-1 ms-1 pb-1"
+                        alt="...">
+                    <div class=" ms-2 border-end h-100 w-75  ">
+                        <h6 class="text-capitalize text-light text-center" id="nombre">Producto:</h6>
+                        <div class="ms-2 ">
+                            <div>
+                                <span class=" text-capitalize text-light descrip descrip">domicilio:</span>
+                                <span class=" datoproduct descrip descrip">Si</span>
+                            </div>
+                            <div class="d-flex overflow-hidden">
+                                <span class=" text-capitalize text-light overflow-hidden descrip">direccion:</span>
+                                <span class="ms-1  descrip" id="direccion">A</span>
+                            </div>
+                            <div>
+                                <span class=" text-capitalize text-light descrip">precio:</span>
+                                <span class=" datoproduct ms-4 descrip">0</span>
+                                <span class=" datoproduct text-uppercase descrip">mlc</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-25">
-                    <button type="button" id="favorito" class="btn border-bottom w-100" title="agregar a favoritos"><img
-                            src="./assets/media/icons/listado de iconos/icons8-me-gusta-100 (1).png" alt=""></button>
-                    <button type="button" id="comprar" class="btn w-100 border-top-1" title="Comprar"><img
-                            src="./assets/media/icons/listado de iconos/icons8-whatsapp-64 (1).png" alt=""></button>
+                    <div class="w-25">
+                        <button type="button" id="favorito" class="btn border-bottom w-100"
+                            title="agregar a favoritos"><img
+                                src="./assets/media/icons/listado de iconos/icons8-me-gusta-100 (1).png"
+                                alt=""></button>
+                        <button type="button" id="comprar" class="btn w-100 border-top-1" title="Comprar"><img
+                                src="./assets/media/icons/listado de iconos/icons8-whatsapp-64 (1).png" alt=""></button>
 
+                    </div>
                 </div>
             </div>
         </div>
-
         <!-- pie de pagina -->
         <footer id="pie" class=" d-flex justify-content-center w-100">
             <div id="inicio" class="flex-fill text-center">
@@ -138,6 +142,7 @@
 
     <script src="./libs/bootstrap-5.3.0/js/popper.min.js"></script>
     <script src="./libs/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="./libs/sweet alert2/javascript/sweetalert2.min.js"></script>
 </body>
 
 </html>
