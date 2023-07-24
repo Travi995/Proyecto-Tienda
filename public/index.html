@@ -9,25 +9,28 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    
-
     <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/opcionesdesplegable.css">
     <link rel="stylesheet" href="./libs/sweet alert2/css/sweetalert2.min.css" />
   </head>
 
   <body >
     <header id="cabecera">
-      <button id="desplegable">
-        <img class="iconoheader" src="./assets/media/icons/listado de iconos/icons8-feed-de-actividad-2-64.png" alt="">
+      <button id="abrirBarraLateral">
+        <img class="iconoHeader" src="./assets/media/icons/listado de iconos/icons8-feed-de-actividad-2-64.png" alt="">
       </button>
-      <div id="barraheader"></div>
+      <div id="barraHeader"></div>
 
-      <button id="iconousuario">
-        <img  class="iconoheader " src="./assets/media/icons/listado de iconos/icons8-vista-desde-la-calle-64.png" alt="">
+      <button id="iconoUsuario">
+        <img  class="iconoHeader " src="./assets/media/icons/listado de iconos/icons8-vista-desde-la-calle-64.png" alt="">
       </button>
     </header>
 
+    <div id="barraLateral">
+      <button id="cerrarBarraLateral">cerrar</button>
+    </div>
+
     <script src="./libs/sweet alert2/javascript/sweetalert2.min.js"></script>
-    <script src="./src/javascript/index.js"></script>
+    <script src="./src/js/opcionesdesplegable.js"></script>
   </body>
 </html>

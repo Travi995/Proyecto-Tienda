@@ -20,9 +20,10 @@ html,body{
     border-radius: 10px;
 }
 
-#desplegable{
+#abrirBarraLateral{
     width: 50px        ;
     background-color: transparent;
+    position: relative;
      
     margin-top: 5px    ;
     margin-bottom: 5px ;
@@ -30,7 +31,7 @@ html,body{
     border-radius: 5px;
     transition: all 500ms;
 }
-#desplegable:hover {
+#abrirBarraLateral:hover {
     filter: drop-shadow(0 0 3px rgba(229, 233, 228, 0.921));
     cursor: pointer;
     border: none !important;
@@ -38,14 +39,14 @@ html,body{
 }
 
 
-#barraheader{
+#barraHeader{
     width: 90%;
     border-left: 1px solid white;
     border-right: 1px solid white;
     
 }
 
-#iconousuario{
+#iconoUsuario{
     width: 50px;
     margin-top: 5px    ;
     margin-bottom: 5px ;
@@ -54,13 +55,13 @@ html,body{
     background-color: transparent;
 }
 
-.iconoheader{
+.iconoHeader{
     width: 46px;
     height: 35px;
     margin-left: -6px;
 }
 
-#iconousuario:hover {
+#iconoUsuario:hover {
     filter: drop-shadow(0 0 3px rgba(229, 233, 228, 0.921));
     cursor: pointer;
     border: none !important;
