@@ -5,8 +5,9 @@
     height: 50px;
     display: flex;
     
-    background-color: rgb(124, 124, 238);
-    border:  1px solid black;
+    background: rgb(12,15,32);
+    background: linear-gradient(30deg, rgb(23, 28, 62) 9%, rgba(10,84,99,0.500437675070028) 64%, rgb(47, 48, 117) 87%);
+    border:  1px solid rgb(239, 236, 236);
     margin: 5px;
     padding-left: 10px;
     border-radius: 10px;
