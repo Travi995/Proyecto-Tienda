@@ -1,0 +1,17 @@
+
+#desplegableUser{
+    width: 200px;
+    height: 400px;
+    z-index: 3;
+    position: fixed;
+    background-color: white;
+    margin-right: 3px;
+    border: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+    right: -400px;
+    transition: all 0.5s ease-in-out;
+}
+
+.showDesplegableUser{
+    right: 0 !important;
+}

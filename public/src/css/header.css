@@ -1,12 +1,4 @@
-html,body{
-    max-width:  100%;
-    min-width:  100%;
-    max-height: 100%;
-    min-height: 100%;
-    padding: 0px !important;
-    margin : 0px !important;
-    overflow: hidden !important;
-}
+
 
 #cabecera{
     width: 98vw;

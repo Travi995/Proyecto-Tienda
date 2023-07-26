@@ -9,12 +9,15 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/opcionesdesplegable.css">
+    <link rel="stylesheet" href="./src/css/desplegableUser.css">
     <link rel="stylesheet" href="./libs/sweet alert2/css/sweetalert2.min.css" />
   </head>
 
   <body >
+    <!-- este es el encabezado de la pagina -->
     <header id="cabecera">
       <button id="abrirBarraLateral">
         <img class="iconoHeader" src="./assets/media/icons/listado de iconos/icons8-feed-de-actividad-2-64.png" alt="">
@@ -26,11 +29,18 @@
       </button>
     </header>
 
+    <!-- barra lateral -->
     <div id="barraLateral">
       <button id="cerrarBarraLateral">cerrar</button>
     </div>
 
+    <!-- barra flotante para el usuario -->
+    <div id="desplegableUser">
+      <p>algo adentro</p>
+    </div>
+
     <script src="./libs/sweet alert2/javascript/sweetalert2.min.js"></script>
     <script src="./src/js/opcionesdesplegable.js"></script>
+    <script src="./src/js/desplegableUser.js"></script>
   </body>
 </html>
