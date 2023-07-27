@@ -1,12 +1,15 @@
+:root{
+    --widthFormUser: 250px;
+}
 
 #desplegableUser{
-    width: 200px;
+    width: var(--widthFormUser);
     height: 400px;
     z-index: 3;
     position: fixed;
-    background-color: white;
+    background-color: #0A0C23;
     margin-right: 3px;
-    border: 1px solid black;
+    border: 1px solid rgb(63, 105, 189);
     border-radius: 5px 0px 0px 5px;
     right: -400px;
     transition: all 0.5s ease-in-out;
@@ -15,3 +18,104 @@
 .showDesplegableUser{
     right: 0 !important;
 }
+
+
+
+/* formulario para inciar sesion */
+.iniciarUsuario{
+    display: none;
+}
+
+#registrarUsuario{
+    display:none;
+}
+
+.showform{
+    display: block !important;
+}
+
+.elementoForm{
+    width: var(--widthFormUser);
+    padding: 5px;
+}
+
+.labelForm{
+    display: flex;
+    width: var(--widthFormUser) !important;
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.inputForm:focus-visible{
+    outline:none !important;
+    
+}
+
+.inputForm{
+    width:  calc(var(--widthFormUser) - 18px);
+    font-size: 16px ;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(230, 26, 145);
+    margin-bottom: 10px;
+}
+
+#loginPassword{
+    padding: 5px;
+}
+
+#iniciarGoogle{
+    width: calc(var(--widthFormUser) - 15px);
+    padding: 5px;
+    margin: 7px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 1px  solid rgb(44, 146, 65);
+    border-radius: 10px;
+}
+
+#iniciarGoogle:hover{
+    background-color: rgb(5, 5, 78);
+    border: 1px  solid red;
+    color: white;
+}
+
+#infoIniciar{
+    margin-left: 5px;
+    margin-top:  5px;
+} 
+
+#infoIniciar span{
+    font-size: 16px;
+    margin: 4px;
+}
+
+#infoIniciar:last-child{
+    color: rgba(240, 248, 255, 0.772);
+
+}
+
+#infoIniciar:last-child:hover{
+    color: rgba(240, 248, 255, 0.772);
+    cursor: none;   
+}
+
+
+#registro{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px dashed white;
+    padding:3px ;
+    border-radius: 2px;
+    text-shadow:2px 2px 2px rgb(78, 69, 69), 2px 2px 2px rgb(181, 112, 112) ;
+}
+#registro:hover{
+    cursor:pointer;
+    text-shadow: 1px 1px 2px red;
+}
+

@@ -11,21 +11,29 @@
 
     <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
-    <link rel="stylesheet" href="./src/css/opcionesdesplegable.css">
-    <link rel="stylesheet" href="./src/css/desplegableUser.css">
+    <link rel="stylesheet" href="./src/css/opcionesdesplegable.css" />
+    <link rel="stylesheet" href="./src/css/desplegableUser.css" />
     <link rel="stylesheet" href="./libs/sweet alert2/css/sweetalert2.min.css" />
   </head>
 
-  <body >
+  <body>
     <!-- este es el encabezado de la pagina -->
     <header id="cabecera">
       <button id="abrirBarraLateral">
-        <img class="iconoHeader" src="./assets/media/icons/listado de iconos/icons8-feed-de-actividad-2-64.png" alt="">
+        <img
+          class="iconoHeader"
+          src="./assets/media/icons/listado de iconos/icons8-feed-de-actividad-2-64.png"
+          alt=""
+        />
       </button>
       <div id="barraHeader"></div>
 
       <button id="iconoUsuario">
-        <img  class="iconoHeader " src="./assets/media/icons/listado de iconos/icons8-vista-desde-la-calle-64.png" alt="">
+        <img
+          class="iconoHeader"
+          src="./assets/media/icons/listado de iconos/icons8-vista-desde-la-calle-64.png"
+          alt=""
+        />
       </button>
     </header>
 
@@ -36,11 +44,51 @@
 
     <!-- barra flotante para el usuario -->
     <div id="desplegableUser">
-      <p>algo adentro</p>
+      <!-- iniciar sesion -->
+      <section id="iniciarUsuario" class="showform">
+        <form action="" id="formularioIniciar">
+          <div id="loginNombre" class="elementoForm">
+            <label for="formularioIniciar" class="labelForm">Usuario:</label>
+            <input type="text" class="inputForm" />
+          </div>
+          <div id="loginPassword" class="elementoForm">
+            <label for="formularioIniciar" class="labelForm"
+              >Constraseña:</label
+            >
+            <input type="password" class="inputForm" />
+          </div>
+          <button id="iniciarGoogle">continuar con google</button>
+
+          <div id="infoIniciar">
+            <span>Ya tienes una cuenta?</span>
+            <span id="registro">Registrate</span>
+          </div>
+        </form>
+      </section>
+
+      <section id="registrarUsuario">
+        <form action="" id="formularioRegistrar" >
+          <div class="elementoForm">
+            <label for="formularioRegistrar" class="labelForm">Nombre de Usuario</label>
+            <input type="text" class="inputForm">
+          </div>
+          <div class="elementoForm">
+            <label for="formularioRegistrar" class="labelForm">Correo Electronico</label>
+            <input type="email" class="inputForm">
+          </div>
+          <div class="elementoForm">
+            <label for="formularioRegistrar" class="labelForm"> Contrasena</label>
+            <input type="password" class="inputForm">
+          </div>
+
+        </form>
+      </section>
     </div>
 
     <script src="./libs/sweet alert2/javascript/sweetalert2.min.js"></script>
     <script src="./src/js/opcionesdesplegable.js"></script>
     <script src="./src/js/desplegableUser.js"></script>
+    <script src="./src/js/iniciarSesionUsuario.js"></script>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
