@@ -1,0 +1,39 @@
+
+
+#menuNavegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 98vw;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 10px;
+    background-color: #121641e2;
+    border-radius: 10px;
+    box-shadow: 1px -1px 2px black, 1px -1px 2px white;
+}
+
+.iconoNavegacion{
+    flex-basis: 50px;
+    transition: all 500ms;
+    border-radius: 10px;
+}
+
+.iconoNavegacion:hover{
+    cursor:pointer;
+    filter: drop-shadow(0 0 3px rgba(229, 233, 228, 0.921));
+}
+.iconoNavegacion img{
+    width: 50px;
+    height: 90%;
+    
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgb(173, 56, 223);
+    
+}
+
+.activo{
+    filter: drop-shadow(0 0 2px rgba(229, 233, 228, 0.921));
+    background-color: rgb(13, 10, 49) !important;
+}
