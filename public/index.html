@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./src/css/header.css" />
     <link rel="stylesheet" href="./src/css/opcionesdesplegable.css" />
     <link rel="stylesheet" href="./src/css/desplegableUser.css" />
+    <link rel="stylesheet" href="./src/css/cuerpoPagina.css" />
     <link rel="stylesheet" href="./libs/sweet alert2/css/sweetalert2.min.css" />
   </head>
 
@@ -67,28 +68,61 @@
       </section>
 
       <section id="registrarUsuario">
-        <form action="" id="formularioRegistrar" >
+        <form action="" id="formularioRegistrar">
           <div class="elementoForm">
-            <label for="formularioRegistrar" class="labelForm">Nombre de Usuario</label>
-            <input type="text" class="inputForm">
+            <label for="formularioRegistrar" class="labelForm"
+              >Nombre de Usuario</label
+            >
+            <input type="text" class="inputForm" />
           </div>
           <div class="elementoForm">
-            <label for="formularioRegistrar" class="labelForm">Correo Electronico</label>
-            <input type="email" class="inputForm">
+            <label for="formularioRegistrar" class="labelForm"
+              >Correo Electronico</label
+            >
+            <input type="email" class="inputForm" />
           </div>
           <div class="elementoForm">
-            <label for="formularioRegistrar" class="labelForm"> Contrasena</label>
-            <input type="password" class="inputForm">
+            <label for="formularioRegistrar" class="labelForm">
+              Contrasena</label
+            >
+            <input type="password" class="inputForm" />
           </div>
-
         </form>
       </section>
+    </div>
+
+    <!-- cuerpo de la pagina -->
+    <div id="cuerpoPagina">
+      <!-- tarjetas de productos -->
+      <div class="tarjeta">
+        <section class="imagen">
+          <img src="./assets/media/imgs/fondos/comprador.jpg" alt="" />
+        </section>
+
+        <section class="descripcion">
+
+          <span class="titulo">nombre</span>
+          <span class="descripcionProducto">click para info</span>
+          <span class="direccion">residencia</span>
+          <span class="precio"> precio</span>
+
+        </section>
+        <div class="opcionesTarjeta">
+        <section class="addFavoritos">
+          <img src="./assets/media/icons/listado de iconos/icons8-me-gusta-100 (1).png" alt="">
+        </section>
+        <section class="linkWhats">
+          <img src="./assets/media/icons/listado de iconos/icons8-whatsapp-64 (1).png" alt="">
+        </section>
+      </div>
+      </div>
     </div>
 
     <script src="./libs/sweet alert2/javascript/sweetalert2.min.js"></script>
     <script src="./src/js/opcionesdesplegable.js"></script>
     <script src="./src/js/desplegableUser.js"></script>
     <script src="./src/js/iniciarSesionUsuario.js"></script>
+    <script src="./src/js/tarjeta.js"></script>
     <script src="./src/js/index.js"></script>
   </body>
 </html>
