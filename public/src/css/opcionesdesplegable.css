@@ -4,8 +4,9 @@
     width: 250px;
     height: 100%;
     z-index: 2;
-    position: fixed; 
-    background-color: rgb(247, 247, 247);
+    position: fixed;
+    background-color: #0A0C23;
+
     margin-left: 3px;
     border-radius: 0px 5px 5px 0px;
     top: 0;
@@ -19,10 +20,33 @@
 #cerrarBarraLateral{
     
     position: absolute;
-    background-color: #333;
+    background-color: #a9a3a3;
     color: white;
     padding: 5px 10px;
     border: none;
     cursor: pointer;
     
 }
+
+/* opciones del menu desplegable */
+.optionsDesplegables{
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all 50ms;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-shadow: -1px -1px 2px  white;
+
+}
+.optionsDesplegables:hover{
+    
+    color: #a9a3a3;
+    cursor: pointer;
+}
+
+/* emergente  para anadir producto */
+
