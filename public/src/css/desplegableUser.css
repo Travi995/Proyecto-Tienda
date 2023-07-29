@@ -46,6 +46,7 @@
     color: white;
     padding-left: 10px;
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
 
 .inputForm:focus-visible{

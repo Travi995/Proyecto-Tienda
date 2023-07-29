@@ -10,6 +10,14 @@ const cargarDesplegableopciones = () => {
         document.getElementById('barraLateral').classList.remove('showBarraLateral')
     })
     
+    document.getElementById('addProducto').addEventListener('click', () => {
+        if (!document.getElementsByClassName('formActivo')[0]) {
+          anadirProducto()  
+        } else {
+            document.getElementById('formAddProducto').parentNode.style.display='block'
+        }
+    })
+
 }
 
 

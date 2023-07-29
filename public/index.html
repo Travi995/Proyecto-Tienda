@@ -96,53 +96,129 @@
     </div>
 
     <!-- cuerpo de la pagina -->
-    <div id="cuerpoPagina">
-      <!-- tarjetas de productos -->
-      <div class="tarjeta">
-        <section class="imagen">
-          <img src="./assets/media/imgs/fondos/comprador.jpg" alt="" />
-        </section>
+    <div id="cuerpoPagina" class="showCuerpo">
+      <div id="home">
+        <!-- tarjetas de productos -->
+        <div class="tarjeta">
+          <section class="imagen">
+            <img src="./assets/media/imgs/fondos/comprador.jpg" alt="" />
+          </section>
 
-        <section class="descripcion">
-          <span class="titulo">nombre</span>
-          <span class="descripcionProducto">click para info</span>
-          <span class="direccion">residencia</span>
-          <span class="precio"> precio</span>
-        </section>
-        <div class="opcionesTarjeta">
-          <section class="addFavoritos">
-            <img
-              src="./assets/media/icons/listado de iconos/icons8-me-gusta-100 (1).png"
-              alt=""
-            />
+          <section class="descripcion">
+            <span class="titulo">nombre</span>
+            <span class="descripcionProducto">click para info</span>
+            <span class="direccion">residencia</span>
+            <span class="precio"> precio</span>
           </section>
-          <section class="linkWhats">
-            <img
-              src="./assets/media/icons/listado de iconos/icons8-whatsapp-64 (1).png"
-              alt=""
-            />
-          </section>
+          <div class="opcionesTarjeta">
+            <section class="addFavoritos">
+              <img
+                src="./assets/media/icons/listado de iconos/icons8-me-gusta-100 (1).png"
+                alt=""
+              />
+            </section>
+            <section class="linkWhats">
+              <img
+                src="./assets/media/icons/listado de iconos/icons8-whatsapp-64 (1).png"
+                alt=""
+              />
+            </section>
+          </div>
         </div>
       </div>
+      <div id=""></div>
+      <div id="buscar"></div>
+      <div id=""></div>
+      <div id="favoritos"></div>
     </div>
-
     <footer>
       <nav id="menuNavegacion">
-        <div id="home" class="iconoNavegacion "><img class="activo" src="./assets/media/icons/listado de iconos/home 2(rosa).png" alt=""></div>
-        <div id="misProductos" class="iconoNavegacion"><img src="./assets/media/icons/listado de iconos/icons8-documentos-de-producto-64.png" alt=""></div>
-        <div id="buscar" class="iconoNavegacion"><img src="./assets/media/icons/listado de iconos/icons8-no-tarifa-ocultos-64.png" alt=""></div>
-        <div id="productosVenta" class="iconoNavegacion"><img src="./assets/media/icons/listado de iconos/icons8-marketplace-hub-64.png" alt=""></div>
-        <div id="favoritos" class="iconoNavegacion"><img src="./assets/media/icons/listado de iconos/icons8-carpeta-de-favoritos-64.png" alt=""></div>
+        <div id="home" class="iconoNavegacion">
+          <img
+            class="activo"
+            src="./assets/media/icons/listado de iconos/home 2(rosa).png"
+            alt=""
+          />
+        </div>
+        <div id="misProductos" class="iconoNavegacion">
+          <img
+            src="./assets/media/icons/listado de iconos/icons8-documentos-de-producto-64.png"
+            alt=""
+          />
+        </div>
+        <div id="buscar" class="iconoNavegacion">
+          <img
+            src="./assets/media/icons/listado de iconos/icons8-no-tarifa-ocultos-64.png"
+            alt=""
+          />
+        </div>
+        <div id="productosVenta" class="iconoNavegacion">
+          <img
+            src="./assets/media/icons/listado de iconos/icons8-marketplace-hub-64.png"
+            alt=""
+          />
+        </div>
+        <div id="favoritos" class="iconoNavegacion">
+          <img
+            src="./assets/media/icons/listado de iconos/icons8-carpeta-de-favoritos-64.png"
+            alt=""
+          />
+        </div>
       </nav>
     </footer>
 
+    <!-- formulario para agregar producto -->
+    <form id="formAddProducto" class="" action="">
+      <div class="elementoForm">
+        <label for="formAddProducto" class="labelForm"
+          >imagen del producto</label
+        >
+        <input type="file" class="inputForm" />
+      </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" class="labelForm"
+          >Nombre del Producto</label
+        >
+        <input type="text" class="inputForm" />
+      </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" class="labelForm"
+          >descripcion del producto</label
+        >
+        <input type="text" class="inputForm" />
+      </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" class="labelForm">
+          municipio de residencia</label
+        >
+        <input type="text" class="inputForm" />
+      </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" class="labelForm"
+          >provincia de residencia</label
+        >
+        <input type="text" class="inputForm" />
+      </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" class="labelForm"
+          >Precio del Producto</label
+        >
+        <input type="number" class="inputForm" />
+      </div>
+
+      <div class="elementoForm centrarBoton">
+        <button class="cancelar">Cancelar</button>
+        <button id="subirProducto" type="submit">Subir</button>
+      </div>
+    </form>
+
     <script src="./libs/sweet alert2/javascript/sweetalert2.min.js"></script>
-    <script src="./src/js/opcionesdesplegable.js"></script>
     <script src="./src/js/desplegableUser.js"></script>
     <script src="./src/js/iniciarSesionUsuario.js"></script>
     <script src="./src/js/tarjeta.js"></script>
     <script src="./src/js/navbar.js"></script>
     <script src="./src/js/anadirProducto.js"></script>
+    <script src="./src/js/opcionesdesplegable.js"></script>
     <script src="./src/js/index.js"></script>
   </body>
 </html>

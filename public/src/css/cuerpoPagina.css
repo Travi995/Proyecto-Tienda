@@ -7,11 +7,14 @@
 #cuerpoPagina{
     width: 96%;
     height:100%;
-    display: flex;
+    display: none;
     border: 1px solid yellow;
     margin: 10px;
     padding: 10px; 
     border-radius: 10px;
+}
+.showCuerpo{
+    display: flex !important;
 }
 
 .tarjeta{
