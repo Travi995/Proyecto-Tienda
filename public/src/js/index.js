@@ -3,4 +3,5 @@ window.onload = () => {
     cargarEventsUser()
     iniciarSesionUsuario()
     cargar_efecto_menu()
+    hacerTarjetas(datosRecibidos)
 }

@@ -19,4 +19,5 @@ const cargarEventosAddProduct = () => {
         event.preventDefault()
         document.getElementById('formAddProducto').parentNode.style.display= 'none'
     })
+    
 }
