@@ -72,6 +72,8 @@
     text-align: center;
 }
 
+
+
 .cancelar{
     text-transform: capitalize;
     background-color: rgb(241, 141, 141);
@@ -91,7 +93,7 @@
     
 }
 
-#subirProducto{
+.enviarDatos{
     background-color: white;
     padding: 5px;
     border-radius: 5px;
@@ -101,10 +103,13 @@
     transition: all 500ms;
 }
 
-#subirProducto:hover{
+.enviarDatos:hover{
     cursor: pointer;
     background-color: #0A0C23;
     border-radius: 3px solid white;
     color: white;
 }
 
+.separarBotonForm{
+     margin-top: 5px;
+}

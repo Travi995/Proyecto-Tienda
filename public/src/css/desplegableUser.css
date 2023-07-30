@@ -95,12 +95,17 @@
     margin: 4px;
 }
 
-#infoIniciar:last-child{
+#infoIniciar span:first-child{
+    color: white;
+}
+
+
+#infoIniciar span:last-child{
     color: rgba(240, 248, 255, 0.772);
 
 }
 
-#infoIniciar:last-child:hover{
+#infoIniciar span:first-child{
     color: rgba(240, 248, 255, 0.772);
     cursor: none;   
 }
