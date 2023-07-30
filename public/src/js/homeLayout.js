@@ -8,8 +8,8 @@ const hacerTarjetas = (arg) => {
 
     objetos.forEach(element => {
         if (modificado === true){
-        tarjetaClonada = document.getElementById('homeLayout').children[0].cloneNode(true)
-        secciones = Array.from(tarjetaClonada.children)
+            tarjetaClonada = document.getElementById('homeLayout').children[0].cloneNode(true)
+            secciones = Array.from(tarjetaClonada.children)
         } else {
             tarjetaClonada = document.getElementById('homeLayout').children[0]
             secciones = Array.from(tarjetaClonada.children)
@@ -29,3 +29,15 @@ const hacerTarjetas = (arg) => {
 
 }
 
+const cargarEvents = (arg) => {
+    let elemento = arg
+    let nuevoNodo = HTMLDivElement
+
+    nuevoNodo = document.createElement('div')
+    
+    nuevoNodo.classList.add('ampliarTarjeta')
+
+    elemento.addEventListenner('click', () => {
+        
+    })
+}
