@@ -6,7 +6,7 @@ const cargarDesplegableopciones = () => {
         document.getElementById('barraLateral').classList.add('showBarraLateral')
     })
 
-    document.getElementById('cerrarBarraLateral').addEventListener('click', () => {
+    document.getElementById('btnCerrarBarraLateral').addEventListener('click', () => {
         document.getElementById('barraLateral').classList.remove('showBarraLateral')
     })
     

@@ -24,14 +24,14 @@
     color: white;
     padding: 5px 10px;
     border: none;
-    cursor: pointer;
+    
     transition: all 500ms;
 }
 
-#btncCerrarBarraLateral:hover{
+#btnCerrarBarraLateral:hover{
     background-color: #1a1e44;
     color: white;
-    
+    cursor: pointer;
 }
 
 .cerrarlateral{
