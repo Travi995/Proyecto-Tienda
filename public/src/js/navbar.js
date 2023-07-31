@@ -9,7 +9,7 @@ const cargar_efecto_menu = () => {
             document.querySelector('img.activo').classList.remove('activo')
 
             element.children[0].classList.add('activo')
-            
+            cambiarLayouts(element)
         })
     });
 }
