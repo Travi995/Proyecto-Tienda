@@ -44,8 +44,9 @@
     <div id="barraLateral">
       <div id="addProducto" class="optionsDesplegables">añadir producto</div>
       <div id=""></div>
-
-      <button id="cerrarBarraLateral">cerrar</button>
+      <div class="cerrarlateral">
+        <button id="btncCerrarBarraLateral">cerrar</button>
+      </div>
     </div>
 
     <!-- barra flotante para el usuario -->
@@ -74,7 +75,6 @@
             <button class="cancelar">Cancelar</button>
             <button class="enviarDatos" type="submit">Subir</button>
           </div>
-
         </form>
       </section>
 
@@ -98,15 +98,12 @@
             >
             <input type="password" class="inputForm" />
           </div>
-
-          
-
         </form>
       </section>
     </div>
 
     <!-- cuerpo de la pagina -->
-    <div id="cuerpoPagina" >
+    <div id="cuerpoPagina">
       <div id="homeLayout" class="showCuerpo">
         <!-- tarjetas de productos -->
         <div class="tarjeta">
@@ -218,10 +215,11 @@
 
       <div class="elementoForm centrarBoton">
         <button class="cancelar">Cancelar</button>
-        <button class="enviarDatos" id="subirProducto"  type="submit">Subir</button>
+        <button class="enviarDatos" id="subirProducto" type="submit">
+          Subir
+        </button>
       </div>
     </form>
-
 
     <script src="./src/js/reciboDatos.js"></script>
     <script src="./libs/sweet alert2/javascript/sweetalert2.min.js"></script>
