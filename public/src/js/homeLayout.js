@@ -48,7 +48,7 @@ const hacerTarjetas = (arg) => {
 const cargarEvents = (arg1, arg2) => {
     let objeto  = arg1
     let tarjeta = arg2 
-    console.log('se disparo el evento')
+    
 
     tarjeta.addEventListener('click', () => {
         cargarTarjetaAmpliada(objeto)
