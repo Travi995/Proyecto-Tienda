@@ -2,6 +2,12 @@ let miError =  ''
 const cambiarLayouts = (arg) => { 
     let elementoNavBar = arg
     let elementosCuerpo = Array.from(document.getElementById('cuerpoPagina').children)
+
+    try {
+        removerVistaAmpliadaProducto()
+    } catch (error) {
+        console.log('la vista ampliada no estaba activada')
+    }
     
     switch (elementoNavBar.getAttribute('id')) {
         

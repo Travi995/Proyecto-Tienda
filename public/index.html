@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./src/css/cuerpoPagina.css" />
     <link rel="stylesheet" href="./src/css/navBar.css" />
     <link rel="stylesheet" href="./src/css/homeLayout.css" />
+    <link rel="stylesheet" href="./src/css/buscarLayout.css" />
     <link rel="stylesheet" href="./libs/sweet alert2/css/sweetalert2.min.css" />
   </head>
 
@@ -53,7 +54,6 @@
     <div id="desplegableUser">
       <!-- iniciar sesion -->
       <section id="iniciarUsuario" class="showform">
-        
         <form action="" id="formularioIniciar">
           <div id="loginNombre" class="elementoForm">
             <label for="formularioIniciar" class="labelForm">Usuario:</label>
@@ -105,7 +105,6 @@
 
     <!-- cuerpo de la pagina -->
     <div id="cuerpoPagina">
-      
       <div id="homeLayout" class="showLayout">
         <!-- tarjetas de productos -->
         <div class="tarjeta">
@@ -135,39 +134,94 @@
           </div>
         </div>
       </div>
-      <div id="ProductosLayout"></div>
-      <div id="buscarLayout"></div>
-      <div id="misProductosLayout"></div>
+      <!-- informacion adicional del producto motstrada por la derecha -->
+
+      <div id="infoCompletaTarjeta">
+        <div id="imgMostrar">
+          <img src="" alt="" />
+        </div>
+        <div id="descripcionMostrar">
+          <div>
+            <span>Name: </span>
+            <span id="tituloMostrar"></span>
+          </div>
+          <div>
+            <span>Category: </span>
+            <span id="categoriaMostrar"></span>
+          </div>
+          <div>
+            <span>Description: </span>
+            <span id="descripcionCompletaMostrar"></span></div>
+          <div>
+            <span>Precio: </span>
+            <span id="precioMostrar"></span></div>
+        </div>
+
+        <div id="botonesMostrar">
+
+          <button class="cancelar">Cancelar</button>
+          <button class="enviarDatos">Comprar</button>
+        </div>
+
+
+      </div>
+
+      <div id="misProductosLayout" title="Varios Productos"></div>
+      <div id="buscarLayout" title="buscador">
+        <form>
+          <div class="elementoForm formBuscar">
+            <input
+              class="inputForm"
+              type="search"
+              name=""
+              id="buscador"
+              placeholder="Escriba para buscar"
+            />
+            <button class="btnBuscar">buscar</button>
+          </div>
+        </form>
+
+        <div id="elementosEncontrados"></div>
+      </div>
+      <div id="productosLayout"></div>
       <div id="favoritoslayout"></div>
     </div>
     <footer>
       <nav id="menuNavegacion">
-        <div id="home" class="iconoNavegacion">
+        <div id="home" class="iconoNavegacion" title="Inicio">
           <img
             class="activo"
             src="./assets/media/icons/listado de iconos/home 2(rosa).png"
             alt=""
           />
         </div>
-        <div id="misProductos" class="iconoNavegacion">
+        <div
+          id="misProductos"
+          class="iconoNavegacion"
+          title="Mis Productos en venta"
+        >
           <img
             src="./assets/media/icons/listado de iconos/icons8-documentos-de-producto-64.png"
             alt=""
           />
         </div>
-        <div id="buscar" class="iconoNavegacion">
+        <div id="buscar" class="iconoNavegacion" title="Buscar Producto">
           <img
             src="./assets/media/icons/listado de iconos/icons8-no-tarifa-ocultos-64.png"
             alt=""
           />
         </div>
-        <div id="productosVenta" class="iconoNavegacion">
+        <div
+          id="productosVenta"
+          class="iconoNavegacion"
+          title=" Productos  en venta"
+        >
           <img
             src="./assets/media/icons/listado de iconos/icons8-marketplace-hub-64.png"
             alt=""
           />
         </div>
-        <div id="favoritos" class="iconoNavegacion">
+        <div id="favoritos" class="iconoNavegacion" title="Favoritos">
           <img
             src="./assets/media/icons/listado de iconos/icons8-carpeta-de-favoritos-64.png"
             alt=""
@@ -233,7 +287,8 @@
     <script src="./src/js/anadirProducto.js"></script>
     <script src="./src/js/opcionesdesplegable.js"></script>
     <script src="./src/js/homeLayout.js"></script>
-    
+    <script src="./src/js/buscarLayout.js"></script>
+
     <script src="./src/js/index.js"></script>
   </body>
 </html>

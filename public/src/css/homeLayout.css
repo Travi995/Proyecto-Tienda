@@ -29,11 +29,10 @@
 
 
 .descripcion{
-    flex-basis: 155px;
+    flex-basis: 164px;
     margin-left: 5px;
     padding: 2px;
    
-    
 }
 
 .descripcion span{
@@ -122,4 +121,6 @@
     background-color: white;
     top: 50px;
     left: 300px;
+    z-index: 4;
 }
+
