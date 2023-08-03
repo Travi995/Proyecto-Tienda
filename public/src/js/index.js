@@ -5,4 +5,5 @@ window.onload = () => {
     cargar_efecto_menu()
     hacerTarjetas(reciboApi)
     busquedaElementos()
+    productosVenta(reciboApi)
 }

@@ -1,0 +1,8 @@
+#productosLayout{
+    
+    width: calc(var(--widthTarjeta) * 4 );
+    border: 1px solid green;
+    max-height: 520px;
+    overflow: auto;
+    padding-left: 20px;
+}

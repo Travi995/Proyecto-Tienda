@@ -30,7 +30,7 @@
     overflow: auto;
 }
 
-#ProductosLayout{
+#productosLayout{
     display: none;
 }
 
@@ -81,6 +81,7 @@
 
 .showInfoCompleta{
     display: block !important;
+    
 }
 
 .infoMostrar{

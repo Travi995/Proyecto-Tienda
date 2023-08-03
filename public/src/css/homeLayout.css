@@ -115,12 +115,5 @@
     border-top: 1px solid white;
 }
 
-.ampliarTarjeta{
-    width:  800px;
-    height: 600px;
-    background-color: white;
-    top: 50px;
-    left: 300px;
-    z-index: 4;
-}
+
 
