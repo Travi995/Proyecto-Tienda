@@ -1,6 +1,6 @@
 // el argumento de est funcion es una rray de objetos\
  
-let error = ''
+
 const hacerTarjetas = (arg) => {
     let objetos = arg.slice(0,3)
     let tarjetaClonada

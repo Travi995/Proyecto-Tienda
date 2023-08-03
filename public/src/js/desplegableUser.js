@@ -1,4 +1,4 @@
-
+let errorEvent = ''
 const cargarEventsUser = () => {
     
     document.getElementById('iconoUsuario').addEventListener('focus', () => {
@@ -10,8 +10,11 @@ const cargarEventsUser = () => {
 
         document.getElementById('desplegableUser').classList.remove('showDesplegableUser')
     })
+    
+    
+    
+   
 
-  
 
 }
 

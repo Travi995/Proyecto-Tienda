@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./src/css/navBar.css" />
     <link rel="stylesheet" href="./src/css/homeLayout.css" />
     <link rel="stylesheet" href="./src/css/buscarLayout.css" />
-    <link rel="stylesheet" href="./src/css/productosVentaLayout.css">
+    <link rel="stylesheet" href="./src/css/productosVentaLayout.css" />
     <link rel="stylesheet" href="./libs/sweet alert2/css/sweetalert2.min.css" />
   </head>
 
@@ -152,19 +152,18 @@
           </div>
           <div>
             <span>Description: </span>
-            <span id="descripcionCompletaMostrar"></span></div>
+            <span id="descripcionCompletaMostrar"></span>
+          </div>
           <div>
             <span>Precio: </span>
-            <span id="precioMostrar"></span></div>
+            <span id="precioMostrar"></span>
+          </div>
         </div>
 
         <div id="botonesMostrar">
-
           <button class="cancelar">Cancelar</button>
           <button class="enviarDatos">Comprar</button>
         </div>
-
-
       </div>
 
       <div id="misProductosLayout" title="Varios Productos"></div>
@@ -234,48 +233,50 @@
     <!-- formulario para agregar producto -->
     <form id="formAddProducto" class="" action="">
       <div class="elementoForm">
-        <label for="formAddProducto" class="labelForm"
-          >imagen del producto</label
-        >
-        <input type="file" class="inputForm" />
-      </div>
-      <div class="elementoForm">
-        <label for="formAddProducto" class="labelForm"
+        <label for="formAddProducto" name="title" class="labelForm"
           >Nombre del Producto</label
         >
         <input type="text" class="inputForm" />
       </div>
       <div class="elementoForm">
-        <label for="formAddProducto" class="labelForm"
-          >descripcion del producto</label
-        >
-        <input type="text" class="inputForm" />
-      </div>
-      <div class="elementoForm">
-        <label for="formAddProducto" class="labelForm">
-          municipio de residencia</label
-        >
-        <input type="text" class="inputForm" />
-      </div>
-      <div class="elementoForm">
-        <label for="formAddProducto" class="labelForm"
-          >provincia de residencia</label
-        >
-        <input type="text" class="inputForm" />
-      </div>
-      <div class="elementoForm">
-        <label for="formAddProducto" class="labelForm"
+        <label for="formAddProducto" name="price" class="labelForm"
           >Precio del Producto</label
         >
         <input type="number" class="inputForm" />
       </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" name="description" class="labelForm">
+          Descripcion Del Producto</label
+        >
+        <input type="text" class="inputForm" />
+      </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" name="category" class="labelForm"
+          >Categoria Del Producto</label
+        >
+        <input type="text" class="inputForm" />
+      </div>
+      <div class="elementoForm">
+        <label for="formAddProducto" name="image" class="labelForm"
+          >imagen del producto</label
+        >
+        <input type="file" class="inputForm" />
+      </div>
 
       <div class="elementoForm centrarBoton">
-        <button class="cancelar">Cancelar</button>
+        <button class="cancelar" id="cancelAnnadir">Cancelar</button>
         <button class="enviarDatos" id="subirProducto" type="submit">
           Subir
         </button>
       </div>
+
+      <!-- <div class="elementoForm"> -->
+      <!-- <label for="formAddProducto" class="labelForm" -->
+      <!-- >provincia de residencia</label -->
+      <!-- > -->
+      <!-- <input type="text" class="inputForm" /> -->
+      <!-- </div> -->
+
     </form>
 
     <script src="./src/js/reciboDatos.js"></script>
